@@ -1,0 +1,111 @@
+/* Passo 3: variáveis*/
+:root {
+    --bg-principal: #f4ebd0;
+    --cor-texto: #2b2b2b;
+    --cor-destaque: #5c1418;
+    --cor-botao: #7f1d1d;
+    --cor-hover: #991b1b;
+  }
+  
+  body.skin-sonserina {
+    --bg-principal: #d2f5e3;
+    --cor-texto: #064e3b;
+    --cor-destaque: #047857;
+    --cor-botao: #065f46;
+    --cor-hover: #047857;
+  }
+  
+  body.skin-grifinoria {
+    --bg-principal: #fef3c7;
+    --cor-texto: #78350f;
+    --cor-destaque: #9a3412;
+    --cor-botao: #991b1b;
+    --cor-hover: #b91c1c;
+  }
+  
+  /* Passo 2: box model e estilos gerais */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-principal);
+    color: var(--cor-texto);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Passo 4: flexbox */
+  .capa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .capa-livro {
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+  
+  /* Passo 7: transições e pseudo classe :hover */
+  .btn-abrir, .botoes-skins button, #lista-botoes button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--cor-botao);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-abrir:hover, .botoes-skins button:hover, #lista-botoes button:hover {
+    transform: scale(1.05);
+    background-color: var(--cor-hover);
+  }
+  
+  /* Passo 5 e 6: CSS grid e responsividade mobile first */
+  .container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .header-casa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  @media (min-width: 650px) {
+    .main-content {
+      grid-template-columns: 250px 1fr;
+    }
+  }
+  
+  #lista-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Passo 14: estado atraves da classe active */
+  #lista-botoes button.active {
+    background-color: var(--cor-destaque);
+    font-weight: bold;
+    border-left: 4px solid #ffffff;
+  }
