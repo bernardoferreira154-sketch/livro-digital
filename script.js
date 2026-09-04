@@ -3,17 +3,17 @@ const contos = [
     {
       id: 0,
       titulo: "O Conto dos Três Irmãos",
-      resumo: "Três irmãos usam magia para ultrapassar a Morte, que lhes concede três objetos poderosos."
+      resumo: "Muito filho mesmo"
     },
     {
       id: 1,
-      titulo: "O Coração Peludo do Mago",
-      resumo: "Um jovem mago decide fechar seu coração para o amor usando magia das trevas."
+      titulo: "O Conto Dos Dois Irmãos",
+      resumo: "Eles são gêmeos"
     },
     {
       id: 2,
-      titulo: "Babbitty, a Coelha e seu Toco Gargalhador",
-      resumo: "Um rei charlatão tenta aprender magia e é enganado por uma lavadeira mística."
+      titulo: "O Conto Do Um Irmão",
+      resumo: "Ele é filho unico"
     }
   ];
   

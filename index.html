@@ -3,42 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Os Contos de Beedle, o Bardo</title>
+  <title>Os Contos de batatas, as batatas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Passo 1: Estrutura HTML Básica -->
+  <!-- Passo 1: Estrutura html Basica -->
   <div id="tela-capa" class="capa-container">
     <div class="capa-livro">
-      <h1>Os Contos de Beedle</h1>
+      <h1>Os Contos de batatas</h1>
       <button class="btn-abrir" onclick="abrirLivro()">Abrir Livro</button>
     </div>
   </div>
 
-  <!-- Passo 5 e 6: Grid e Responsividade -->
+  <!-- Passo 5 e 6: grid e Responsividade -->
   <div id="tela-livro" class="container" style="display: none;">
     <header class="header-casa">
-      <h2>Skins das Casas</h2>
+      <h2>Tipo De Batata</h2>
       <div class="botoes-skins">
-        <!-- Passo 10: Eventos com onclick -->
-        <button onclick="mudarCasa('skin-grifinoria')">Grifinória</button>
-        <button onclick="mudarCasa('skin-sonserina')">Sonserina</button>
+        <!-- Passo 10: eventos com onclick -->
+        <button onclick="mudarCasa('skin-grifinoria')">Batata Cozida</button>
+        <button onclick="mudarCasa('skin-sonserina')">Batata Podre</button>
       </div>
     </header>
 
     <main class="main-content">
-      <!-- Passo 11: Container onde os botões serão inseridos dinamicamente -->
+      <!-- Passo 11 -->
       <aside id="menu-contos" class="menu-lateral">
         <h3>Contos</h3>
         <div id="lista-botoes"></div>
       </aside>
 
-      <!-- Passo 9: Elementos manipulados via DOM -->
+      <!-- Passo 9-->
       <section class="leitura-container">
         <h2 id="contoTitulo">Selecione um conto</h2>
         <p id="contoResumo">Clique em um dos títulos ao lado para ler o resumo.</p>
         <div id="contoNota" style="display: none;">
-          <p><em>Nota do Professor Dumbledore incluída nesta edição.</em></p>
+          <p><em>Ele(s) infelismente não gosta(m) de batatas.</em></p>
         </div>
       </section>
     </main>
